@@ -1,0 +1,9 @@
+.cursorrules
+.DS_Store
+.vscode/*
+*.png
+*.pyc
+build/*
+dist/*
+poetry.lock
+src/lifestay.egg-info/*

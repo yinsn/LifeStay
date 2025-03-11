@@ -1,0 +1,44 @@
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+name = "lifestay"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "chengyin",email = "ycheng_sjtu@foxmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "ipykernel (>=6.29.5,<7.0.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "numpy (>=2.2.3,<3.0.0)",
+    "mypy (>=1.15.0,<2.0.0)",
+    "lifelines (>=0.30.0,<0.31.0)",
+    "scikit-learn (>=1.6.1,<2.0.0)",
+    "jinja2 (>=3.1.5,<4.0.0)",
+    "nbformat (>=5.10.4,<6.0.0)"
+]
+
+[project.urls]
+Homepage = "https://github.com/yinsn/LifeStay"
+Repository = "https://github.com/yinsn/LifeStay.git"
+
+[tool.poetry]
+packages = [{include = "lifestay", from = "src"}]
+
+[tool.black]
+line_length = 88
+target-version = ['py310']
+
+[tool.isort]
+ensure_newline_before_comments = true
+force_grid_wrap = 0
+include_trailing_comma = true
+line_length = 88
+multi_line_output = 3
+use_parentheses = true
+profile = "black"
