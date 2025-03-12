@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [project]
 name = "lifestay"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = [
     {name = "chengyin",email = "ycheng_sjtu@foxmail.com"}
@@ -20,7 +20,8 @@ dependencies = [
     "lifelines (>=0.30.0,<0.31.0)",
     "scikit-learn (>=1.6.1,<2.0.0)",
     "jinja2 (>=3.1.5,<4.0.0)",
-    "nbformat (>=5.10.4,<6.0.0)"
+    "nbformat (>=5.10.4,<6.0.0)",
+    "plotly (>=6.0.0,<7.0.0)"
 ]
 
 [project.urls]
