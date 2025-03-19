@@ -58,6 +58,9 @@ from .loader.sample_builder import SampleBuilder
 # Import the EOLExtractor class
 from .samplers.eol_extractor import EOLExtractor
 
+# Import the Pattern Builder
+from .samplers.pattern_builder import HeartbeatDeclinePatternBuilder
+
 # Import the WindowAverager class
 from .samplers.window_averager import WindowAverager
 
@@ -95,6 +98,7 @@ __all__ = [
     "plot_survival_curves",
     "read_csv_with_lists",
     "SampleBuilder",
+    "HeartbeatDeclinePatternBuilder",
     "survival_risk_groups",
     "SurvivalDatasetBuilder",
     "visualize_contribution_distribution",
