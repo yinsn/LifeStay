@@ -23,6 +23,7 @@ from .contribution_analysis import (
 from .cox_model import CoxPHModel
 from .data_builder import SurvivalDatasetBuilder
 from .data_converter import convert_to_lifelines_format
+from .first_event_builder import TimeToFirstEventPipeline
 from .interaction_cox import cox_model_with_interactions
 from .metrics_calculation import calculate_risk_metrics
 from .risk_stratification import survival_risk_groups, visualize_risk_distribution
@@ -50,6 +51,7 @@ __all__ = [
     "plot_survival_curves",
     "survival_risk_groups",
     "SurvivalDatasetBuilder",
+    "TimeToFirstEventPipeline",
     "visualize_contribution_distribution",
     "visualize_risk_distribution",
 ]

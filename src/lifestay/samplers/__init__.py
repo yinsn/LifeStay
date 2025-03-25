@@ -10,6 +10,9 @@ from .log_utils import setup_logger
 # Import the Pattern Builder
 from .pattern_builder import HeartbeatDeclinePatternBuilder
 
+# Import the Time-to-First Event Builder
+from .time_to_first_event import TimeToFirstEventBuilder
+
 # Import the Window Averager
 from .window_averager import WindowAverager
 
@@ -19,4 +22,5 @@ __all__ = [
     "setup_logger",
     "WindowAverager",
     "HeartbeatDeclinePatternBuilder",
+    "TimeToFirstEventBuilder",
 ]

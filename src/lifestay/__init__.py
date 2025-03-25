@@ -33,6 +33,7 @@ logger = logging.getLogger("lifestay")
 
 # Import additional functions from the survival package
 from lifestay.survival import (
+    TimeToFirstEventPipeline,
     basic_cox_model,
     calculate_feature_contribution,
     cox_model_with_interactions,
@@ -101,6 +102,7 @@ __all__ = [
     "HeartbeatDeclinePatternBuilder",
     "survival_risk_groups",
     "SurvivalDatasetBuilder",
+    "TimeToFirstEventPipeline",
     "visualize_contribution_distribution",
     "visualize_risk_distribution",
     "WindowAverager",
